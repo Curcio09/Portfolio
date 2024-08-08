@@ -1,12 +1,14 @@
-// src/About.js
-
 import React from 'react';
+import './About.css'; // Make sure to import the CSS file
 
 function About() {
   return (
-    <div>
-      <h2>About</h2>
-      <p>This is the About page.</p>
+    <div className="home-container">
+      <div className="content">
+        <p className="description">
+          About
+        </p>
+      </div>     
     </div>
   );
 }

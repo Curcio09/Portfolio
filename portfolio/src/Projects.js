@@ -1,12 +1,13 @@
-// src/Projects.js
-
 import React from 'react';
 
 function Projects() {
   return (
-    <div>
-      <h2>Projects</h2>
-      <p>This is the Projects page.</p>
+    <div className="home-container">
+      <div className="content">
+        <p className="description">
+          Projects
+        </p>
+      </div>     
     </div>
   );
 }

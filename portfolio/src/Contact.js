@@ -1,12 +1,13 @@
-// src/Contact.js
-
 import React from 'react';
 
 function Contact() {
   return (
-    <div>
-      <h2>Contact</h2>
-      <p>This is the Contact page.</p>
+    <div className="home-container">
+      <div className="content">
+        <p className="description">
+          Contact
+        </p>
+      </div>     
     </div>
   );
 }
