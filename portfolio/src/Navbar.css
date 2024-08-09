@@ -1,33 +1,51 @@
 .name-white {
-  color: #FFFFFF; /* White color for "Chris" */
+  color: #FFFFFF;
 }
 
 .name-grey {
-  color: #4C545C; /* Grey color for "Curcio" */
+  color: #4C545C;
 }
 
 .navbar-header {
-  display: flex; /* Ensure spans are inline */
-  margin: 0; /* Remove default margin */
-  font-family: 'Lalezar', sans-serif; /* Apply Lalezar font */
-  font-size: 24px; /* Set the font size */
+  display: flex;
+  margin: 0;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 28px;
 }
 
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px; /* Adjust padding as needed */
+  padding: 40px 65px;
 }
 
 .navbar-header {
-  margin: 0; /* Removes default margin */
+  margin: 0;
 }
 
 .navbar-links {
   display: flex;
+  font-size: 22px;
+  font-family: 'Lalezar', sans-serif;
+  margin-right: 10px;
 }
 
 .nav-link {
-  margin-left: 20px; /* Spacing between links */
+  margin-left: 80px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -10px;
+  right: -10px;
+  bottom: 5px;
+  background-color: lightgrey;
+  opacity: .2;
+  z-index: 0;
+  border-radius: 8px;
 }

@@ -1,8 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; // Make sure this is correctly imported
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
+  const location = useLocation();
+  const [active, setActive] = useState(location.pathname);
+
   return (
     <div className="navbar">
       <div className="navbar-content">
@@ -10,10 +13,10 @@ function Navbar() {
           <span className="name-white">Chris</span><span className="name-grey">Curcio</span>
         </h1>
         <div className="navbar-links">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">About</Link>
-          <Link to="/projects" className="nav-link">Projects</Link>
-          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/" className={`nav-link ${active === '/' ? 'active' : ''}`} onClick={() => setActive('/')}>Home</Link>
+          <Link to="/about" className={`nav-link ${active === '/about' ? 'active' : ''}`} onClick={() => setActive('/about')}>About</Link>
+          <Link to="/projects" className={`nav-link ${active === '/projects' ? 'active' : ''}`} onClick={() => setActive('/projects')}>Projects</Link>
+          <Link to="/contact" className={`nav-link ${active === '/contact' ? 'active' : ''}`} onClick={() => setActive('/contact')}>Contact</Link>
         </div>
       </div>
     </div>
