@@ -1,0 +1,49 @@
+/* Home.css - Styles for the Home component */
+
+/* Layout for the entire home container */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh; /* Ensures the container expands with content */
+}
+
+/* Styling for the text section within the home container */
+.home-text {
+  flex: 1; /* Ensures flexibility in layout */
+  max-width: 40%; /* Limits the maximum width to maintain design consistency */
+}
+
+/* Container for the image within the home section */
+.home-image {
+  flex: 1; /* Balances space with the text section */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+}
+
+/* Responsive image styling */
+.home-image img {
+  max-width: 100%; /* Ensures the image does not exceed its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  filter: grayscale(100%); /* Greyscale effect for stylistic preference */
+}
+
+/* General styling for buttons within the home component */
+button {
+  background-color: #000; /* Black background */
+  color: #F6D26D; /* Gold text for visibility and design consistency */
+  font-family: 'Lalezar', sans-serif; /* Sets Lalezar as the font for the button */
+  font-size: 25px; /* Sets the font size to 25px */
+  line-height: 40px; /* Match the line height with the button's height for vertical centering */
+  padding: 10px 20px; /* Consistent padding with other buttons */
+  border: 2px solid #F6D26D; /* Gold border to match the text color */
+  border-radius: 8px; /* Rounded corners for a smoother look */
+  cursor: pointer; /* Ensures the cursor indicates interactivity */
+  height: 40px; /* Fixed height as specified */
+ /* margin: auto; Auto margins for centering in potentially flexible layouts */
+  text-align: center; /* Centers text horizontally inside the button */
+  display: flex; /* Enables flexbox properties */
+  align-items: center; /* Aligns children (text) vertically in the center */
+  justify-content: center; /* Ensures horizontal centering */
+}

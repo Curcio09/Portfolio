@@ -31,21 +31,6 @@ a:hover {
   text-decoration: underline; /* Underline on hover */
 }
 
-/* General button styles */
-button {
-  font-family: 'Lalezar', sans-serif;
-  background-color: #13171A;
-  color: #F6D26D;
-  border: 2px solid #F6D26D;
-  border-radius: 8px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #F6D26D;
-  color: #13171A;
-}
 
 /* Container for the main content */
 .main-container {

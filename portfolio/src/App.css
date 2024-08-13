@@ -13,20 +13,11 @@ body, html {
   display: flex;
 }
 
-.main-header {
-  width: 100%;
-  padding-top: 60px;
-  font-size: 28px;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-}
-
 /* Main Container */
 .main-container {
   padding: 20px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 100px;
   margin-bottom: 100px;
   border-radius: 25px;
