@@ -1,49 +1,146 @@
 /* Home.css - Styles for the Home component */
 
-/* Layout for the entire home container */
-.home-container {
-  display: flex;
-  justify-content: space-between;
+/* Home grid container */
+.homeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  min-height: 100vh;
+  gap: 50px;
   align-items: center;
-  padding: 50px;
-  min-height: 100vh; /* Ensures the container expands with content */
+  justify-content: center;
 }
 
-/* Styling for the text section within the home container */
-.home-text {
-  flex: 1; /* Ensures flexibility in layout */
-  max-width: 40%; /* Limits the maximum width to maintain design consistency */
-}
-
-/* Container for the image within the home section */
-.home-image {
-  flex: 1; /* Balances space with the text section */
+/* Styling for the text section in the top-left grid cell */
+.oneOne {
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 200px;
 }
 
-/* Responsive image styling */
-.home-image img {
-  max-width: 100%; /* Ensures the image does not exceed its container */
-  height: auto; /* Maintains the aspect ratio of the image */
-  filter: grayscale(100%); /* Greyscale effect for stylistic preference */
+/* Styling for the text in the top-left grid cell */
+.oneOne p {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-/* General styling for buttons within the home component */
-button {
-  background-color: #000; /* Black background */
-  color: #F6D26D; /* Gold text for visibility and design consistency */
-  font-family: 'Lalezar', sans-serif; /* Sets Lalezar as the font for the button */
-  font-size: 25px; /* Sets the font size to 25px */
-  line-height: 40px; /* Match the line height with the button's height for vertical centering */
-  padding: 10px 20px; /* Consistent padding with other buttons */
-  border: 2px solid #F6D26D; /* Gold border to match the text color */
-  border-radius: 8px; /* Rounded corners for a smoother look */
-  cursor: pointer; /* Ensures the cursor indicates interactivity */
-  height: 40px; /* Fixed height as specified */
- /* margin: auto; Auto margins for centering in potentially flexible layouts */
-  text-align: center; /* Centers text horizontally inside the button */
-  display: flex; /* Enables flexbox properties */
-  align-items: center; /* Aligns children (text) vertically in the center */
-  justify-content: center; /* Ensures horizontal centering */
+/* Styling for the highlighted name */
+.highlight-name {
+  color: #F6D26D;
+  font-size: 26px;
+}
+
+/* Styling for the button in the top-left grid cell */
+.oneOne button {
+  margin-top: 10px;
+  background-color: #000;
+  color: #F6D26D;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 22px;
+  padding: 4px 24px;
+  border: 2px solid #F6D26D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the image and ellipse in the top-right grid cell */
+.oneTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 200px;
+}
+
+/* Image container styling */
+.image-container {
+  position: relative;
+  width: 414px; /* Width matching the Ellipse */
+  height: 392.62px; /* Height matching the Ellipse */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ellipse styling */
+.ellipse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 95px;
+  padding-right: 28px;
+  z-index: 1;
+}
+
+/* Profile image styling */
+.profile-image {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  object-fit: cover;
+  margin-top: 42px;
+  filter: grayscale(100%);
+}
+
+/* Styling for the image in the bottom-left grid cell */
+.twoOne img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 150px;
+}
+
+/* Styling for the text section in the bottom-right grid cell */
+.twoTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.twoTwo p {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Styling for the button in the top-left grid cell */
+.oneOne button {
+  margin-top: 10px;
+  background-color: #000;
+  color: #F6D26D;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 22px;
+  padding: 4px 24px;
+  border: 2px solid #F6D26D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twoTwo button {
+  margin-top: 10px;
+  background-color: #000;
+  color: #F6D26D;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 22px;
+  padding: 4px 24px;
+  border: 2px solid #F6D26D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

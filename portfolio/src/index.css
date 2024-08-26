@@ -49,3 +49,20 @@ a:hover {
     padding: 10px;
   }
 }
+
+h1 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 36px; /* Set desired font size */
+  line-height: 1.2; /* Set line-height for spacing */
+  color: #F6D26D; /* Set the color if different from default */
+}
+
+/* p Styles */
+p {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 18px; /* Set desired font size */
+  line-height: 1.5; /* Set line-height for spacing */
+  color: #FFFFFF; /* Set the color if different from default */
+}
