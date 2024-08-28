@@ -90,10 +90,18 @@
 }
 
 /* Styling for the image in the bottom-left grid cell */
+.twoOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
+}
+
 .twoOne img {
   max-width: 100%;
   height: auto;
-  padding-left: 150px;
+  width: 100%; /* Ensure image is responsive */
+  object-fit: cover;
 }
 
 /* Styling for the text section in the bottom-right grid cell */
@@ -113,9 +121,8 @@
   padding: 0;
 }
 
-
-/* Styling for the button in the top-left grid cell */
-.oneOne button {
+/* Styling for the button in the bottom-right grid cell */
+.twoTwo button {
   margin-top: 10px;
   background-color: #000;
   color: #F6D26D;
@@ -130,17 +137,53 @@
   justify-content: center;
 }
 
-.twoTwo button {
-  margin-top: 10px;
-  background-color: #000;
-  color: #F6D26D;
-  font-family: 'Lalezar', sans-serif;
-  font-size: 22px;
-  padding: 4px 24px;
-  border: 2px solid #F6D26D;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .homeGrid {
+    grid-template-columns: repeat(2, 1fr); /* Maintain two-column layout */
+    grid-template-rows: auto; /* Automatically adjust row height */
+    gap: 10px; /* Smaller gap to fit items better on mobile */
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .oneOne, .oneTwo, .twoOne, .twoTwo {
+    padding: 5px; /* Reduce padding within grid items */
+  }
+
+  .oneOne p, .twoTwo p {
+    font-size: 16px; /* Adjust text size for readability on mobile */
+  }
+
+  .oneOne button, .twoTwo button {
+    font-size: 18px; /* Adjust button font size */
+    padding: 8px; /* Adjust button padding for better fit */
+  }
+
+  .oneTwo .image-container, .twoOne img {
+    width: 100%; /* Ensure images fit within the grid */
+    height: auto;
+  }
+
+  .ellipse {
+    display: none; /* Hide the ellipse on mobile */
+  }
+
+  .profile-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .twoOne, .twoTwo {
+    display: flex;
+    flex-direction: column; /* Stack text and images vertically */
+    align-items: center;
+  }
+
+  .twoOne img {
+    max-width: 100%; /* Ensure images fit within mobile layout */
+  }
+
+  .twoTwo {
+    max-width: 100%; /* Ensure text and buttons fit within mobile layout */
+  }
 }
