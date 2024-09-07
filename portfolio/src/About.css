@@ -1,0 +1,76 @@
+/* General styles for the about page */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background: #4C545C;
+    color: #FFFFFF;
+    min-height: 100vh;
+  }
+  
+  .about-section, .skills-section {
+    background: #13171A;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%; /* Responsive width */
+  }
+  
+  .about-title, .skills-title {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .about-description {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  
+  .skills-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .skill-icon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Keep square aspect ratio */
+  }
+  
+  /* Adjusting for responsive design */
+  @media (max-width: 768px) {
+    .about-title, .skills-title {
+      font-size: 24px;
+    }
+    .about-description {
+      font-size: 13px;
+    }
+    .skill-icon {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-section, .skills-section {
+      width: 95%; /* More width on smaller screens */
+    }
+    .about-title, .skills-title {
+      font-size: 18px;
+    }
+    .about-description {
+      font-size: 12px;
+    }
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+    }
+  }  
