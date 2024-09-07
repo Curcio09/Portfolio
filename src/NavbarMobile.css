@@ -1,0 +1,72 @@
+/* Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+    /* Navbar Links - Hidden by Default on Mobile */
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      background-color: #13171A;
+      width: 100%;
+      max-height: 70vh; /* Limit the height of the dropdown to 70% of the viewport */
+      overflow-y: auto; /* Add vertical scroll if the content exceeds the max height */
+      position: absolute;
+      top: 100px; /* Adjusted position of the dropdown menu */
+      right: 0;
+      padding: 20px;
+      border-radius: 0 0 15px 15px;
+      box-sizing: border-box; /* Ensure padding is included within the width and height */
+      justify-content: center; /* Center the links vertically */
+      align-items: center; /* Center the links horizontally */
+      text-align: center; /* Center the text within each link */
+      z-index: 2;
+    }
+  
+    /* Navbar Links - Visible When Menu is Open */
+    .navbar-links.open {
+      display: flex;
+      z-index: 2;
+    }
+  
+    /* Hide the grey box behind active link on mobile */
+    .nav-link.active::before {
+      display: none; /* Hide grey box on mobile */
+    }
+  
+    /* Hamburger Icon - Visible on Mobile */
+    .hamburger-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      position: relative; /* Ensure proper alignment */
+      right: 0; /* Aligns it to the right end */
+      top: 0;
+    }
+  
+    /* Hamburger Bars */
+    .hamburger-icon .bar {
+      width: 40px;
+      height: 5px;
+      background-color: #4C545C;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+  
+    /* Navbar Content Adjustments for Mobile */
+    .navbar-content {
+      padding: 55px 25px 5px 15px; /* Adjust padding to fit smaller screens */
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background: #13171A;
+    }
+  
+    .navbar-header .name-white,
+    .navbar-header .name-grey {
+      font-size: 32px;
+      padding-top: 10px;
+    }
+  
+    .nav-link {
+      margin: 10px 0; /* Adjust margin for mobile */
+      font-size: 20px; /* Adjust font size for better readability */
+    }
+  }

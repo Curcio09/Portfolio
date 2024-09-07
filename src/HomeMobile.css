@@ -1,0 +1,90 @@
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Grid adjustments for mobile */
+    .homeGrid {
+      grid-template-columns: repeat(2, 1fr); /* Maintain two-column layout for mobile */
+      grid-template-rows: auto;
+      gap: 10px; /* Smaller gap for better fit */
+      padding: 10px;
+    }
+  
+    /* Font size adjustments for smaller screens */
+    .highlight-name {
+      font-size: 18px; /* Decrease font size for mobile */
+    }
+  
+    /* Apply consistent padding for mobile */
+    .oneOne, .oneTwo, .twoOne, .twoTwo {
+      padding: 5px;
+    }
+  
+    /* Text size and layout adjustments for mobile */
+    .oneOne p, .twoTwo p {
+      font-size: 16px; /* Smaller font for mobile */
+      line-height: 1.4; /* Adjust spacing */
+      padding: 0 5px; /* Add horizontal padding */
+      white-space: pre-wrap; /* Keep white space */
+      word-break: break-word; /* Handle long words */
+    }
+  
+    /* Button adjustments for mobile */
+    .oneOne button, .twoTwo button {
+      font-size: 18px; /* Decrease button font size */
+      background-color: #4C545C;
+      color: #F6D26D;
+      border: 2px solid #F6D26D;
+      padding: 3px 20px; /* Adjust padding for button size */
+      min-width: 80px; /* Reduce minimum width for smaller screens */
+      border-radius: 8px;
+    }
+  
+    /* Image container adjustments for mobile view */
+    .oneTwo .image-container, .twoOne img {
+      width: 100%; /* Ensure images are responsive */
+      height: auto;
+    }
+  
+    /* Hide ellipse background on mobile */
+    .ellipse {
+      display: none; /* Hide for cleaner mobile layout */
+    }
+  
+    /* Profile image size adjustments for mobile */
+    .profile-image {
+      max-width: 230px; /* Reduce profile image size */
+      height: auto;
+      padding-right: 10px;
+    }
+  
+    /* Adjust layout for twoOne container */
+    .twoOne {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the left */
+        margin-top: 25px;
+        width: 100%; /* Make it take the full width of its parent */
+        max-width: 600px; /* Set a specific max-width (you can adjust this value) */
+    }
+
+    /* Adjust layout for twoTwo container */
+    .twoTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the left */
+        margin-left: 50px;
+    }
+    
+    .homeGrid .twoOne img {
+        max-width: 400px;
+        width: 125%;
+        height: auto;
+        padding-bottom: 45px;
+      }
+          
+  
+    /* Ensure full width for content in twoTwo */
+    .twoTwo {
+      max-width: 100%;
+    }
+  }  

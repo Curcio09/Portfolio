@@ -1,0 +1,68 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lalezar', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #4C545C; /* Background color from your Figma design */
+  color: #FFFFFF; /* Default text color */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #13171A; /* Background for code snippets */
+  color: #F6D26D; /* Text color for code snippets */
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Global link styles */
+a {
+  color: #FFFFFF; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Container for the main content */
+.main-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 36px; /* Set desired font size */
+  line-height: 1.2; /* Set line-height for spacing */
+  color: #F6D26D; /* Set the color if different from default */
+}
+
+/* p Styles */
+p {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 18px; /* Set desired font size */
+  line-height: 1.5; /* Set line-height for spacing */
+  color: #FFFFFF; /* Set the color if different from default */
+}

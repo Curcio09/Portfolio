@@ -1,0 +1,60 @@
+/* Text Colors */
+.name-white {
+  color: #FFFFFF;
+}
+
+.name-grey {
+  color: #4C545C;
+}
+
+/* Navbar Header */
+.navbar-header {
+  display: flex;
+  margin: 0;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 28px;
+  flex-grow: 1; /* Ensures the header takes up available space */
+}
+
+/* Navbar Content */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 65px;
+  padding-bottom: 120px;
+  position: relative; /* Allows for absolute positioning within */
+}
+
+/* Navbar Links - Desktop View */
+.navbar-links {
+  display: flex;
+  font-size: 22px;
+  font-family: 'Lalezar', sans-serif;
+  margin-right: 10px;
+}
+
+/* Navbar Link Styles */
+.nav-link {
+  margin-left: 80px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -10px;
+  right: -10px;
+  bottom: 5px;
+  background-color: lightgrey;
+  opacity: 0.2;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+/* Hamburger Icon - Hidden on Desktop */
+.hamburger-icon {
+  display: none;
+}

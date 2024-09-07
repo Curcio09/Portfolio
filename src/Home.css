@@ -1,0 +1,138 @@
+/* Home.css - Styles for the Home component */
+
+/* Home grid container */
+.homeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the text section in the top-left grid cell */
+.oneOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 200px;
+}
+
+/* Styling for the text in the top-left grid cell */
+.oneOne p {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the highlighted name */
+.highlight-name {
+  color: #F6D26D;
+  font-size: 26px;
+}
+
+/* Styling for the button in the top-left grid cell */
+.oneOne button {
+  margin-top: 10px;
+  background-color: #000;
+  color: #F6D26D;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 22px;
+  padding: 4px 24px;
+  border: 2px solid #F6D26D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the image and ellipse in the top-right grid cell */
+.oneTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 180px;
+}
+
+/* Image container styling */
+.image-container {
+  position: relative;
+  width: 414px; /* Width matching the Ellipse */
+  height: 392.62px; /* Height matching the Ellipse */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ellipse styling */
+.ellipse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 95px;
+  padding-right: 28px;
+  z-index: 1;
+}
+
+/* Profile image styling */
+.profile-image {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  object-fit: cover;
+  margin-top: 42px;
+  filter: grayscale(100%);
+}
+
+/* Styling for the image in the bottom-left grid cell */
+.twoOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.twoOne img {
+  max-width: 500px; /* Set a fixed max-width for desktop */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 60px;
+}
+
+/* Styling for the text section in the bottom-right grid cell */
+.twoTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.twoTwo p {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the button in the bottom-right grid cell */
+.twoTwo button {
+  margin-top: 10px;
+  background-color: #000;
+  color: #F6D26D;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 22px;
+  padding: 4px 24px;
+  border: 2px solid #F6D26D;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
