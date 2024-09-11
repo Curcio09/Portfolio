@@ -1,76 +1,113 @@
 /* General styles for the about page */
+/* General styles for the about page */
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    background: #4C545C;
-    color: #FFFFFF;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px 40px 20px; /* No padding on top, but 20px on left/right and 60px on bottom */
+  background: #13171A;
+  color: #FFFFFF;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  gap: 40px;
+  padding: 0 20px 20px 20px; /* No padding on top, but 20px on left/right and bottom */
+}
+
+/* Left Section: About */
+.about-text {
+  font-family: 'Lalezar', sans-serif;
+  font-size: 15px; /* Font size from Figma */
+  line-height: 1.8; /* Line spacing for better readability */
+  color: #FFFFFF;
+  width: 331px; /* Exact width from Figma */
+  margin: 0 auto; /* Center the text */
+  padding: 10px 0; /* Vertical padding */
+}
+
+h2 {
+  font-family: 'Lalezar', sans-serif;
+  font-size: 32px; /* Heading font size */
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+/* Right Section: Skills */
+.skills {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skills h2 {
+  font-family: 'Lalezar', sans-serif;
+  font-size: 32px; /* Heading font size for skills */
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3-column grid layout */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center the sections */
   }
-  
-  .about-section, .skills-section {
-    background: #13171A;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 10px 0;
-    width: 80%; /* Responsive width */
-  }
-  
+}
+
+@media (max-width: 768px) {
   .about-title, .skills-title {
-    font-family: 'Lalezar', sans-serif;
-    font-size: 32px;
-    color: #FFFFFF;
-    text-align: center;
+    font-size: 24px; /* Adjust heading size */
   }
-  
   .about-description {
-    font-family: 'Lalezar', sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    color: #FFFFFF;
-    text-align: justify;
-    margin-top: 20px;
+    font-size: 13px;
   }
-  
-  .skills-icons {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  
   .skill-icon {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Keep square aspect ratio */
+    width: 80px;
+    height: 80px;
   }
-  
-  /* Adjusting for responsive design */
-  @media (max-width: 768px) {
-    .about-title, .skills-title {
-      font-size: 24px;
-    }
-    .about-description {
-      font-size: 13px;
-    }
-    .skill-icon {
-      width: 80px;
-      height: 80px;
-    }
+}
+
+@media (max-width: 480px) {
+  .about-section, .skills-section {
+    width: 95%; /* More width on smaller screens */
   }
-  
-  @media (max-width: 480px) {
-    .about-section, .skills-section {
-      width: 95%; /* More width on smaller screens */
-    }
-    .about-title, .skills-title {
-      font-size: 18px;
-    }
-    .about-description {
-      font-size: 12px;
-    }
-    .skill-icon {
-      width: 60px;
-      height: 60px;
-    }
-  }  
+  .about-title, .skills-title {
+    font-size: 18px; /* Smaller heading for mobile */
+  }
+  .about-description {
+    font-size: 12px;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2-column grid for smaller screens */
+  }
+  .skill-icon {
+    width: 60px;
+    height: 60px; /* Smaller icon size for mobile */
+  }
+}
