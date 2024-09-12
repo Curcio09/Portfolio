@@ -1,5 +1,4 @@
 /* General styles for the about page */
-/* General styles for the about page */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -90,24 +89,5 @@ h2 {
   .skill-icon {
     width: 80px;
     height: 80px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-section, .skills-section {
-    width: 95%; /* More width on smaller screens */
-  }
-  .about-title, .skills-title {
-    font-size: 18px; /* Smaller heading for mobile */
-  }
-  .about-description {
-    font-size: 12px;
-  }
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2-column grid for smaller screens */
-  }
-  .skill-icon {
-    width: 60px;
-    height: 60px; /* Smaller icon size for mobile */
   }
 }

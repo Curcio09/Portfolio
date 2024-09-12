@@ -1,0 +1,56 @@
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Main container adjustments */
+    .about-container {
+        padding: 10px 20px 30px 20px; /* Adjust padding for mobile */
+        background-color: #4C545C !important; /* Correct background color for mobile */
+    }
+
+    /* Heading adjustments for mobile */
+    h2 {
+        font-size: 24px; /* Adjust heading size for mobile */
+        text-align: center; /* Keep heading centered */
+    }
+
+    /* About text adjustments */
+    .about-text {
+        font-size: 14px; /* Smaller font size for mobile */
+        line-height: 1.6; /* Adjust line height for readability */
+        width: 100%; /* Full width on mobile */
+        text-align: center; /* Center text for mobile readability */
+        padding: 10px 5px; /* Add some horizontal padding */
+    }
+
+    /* Skills section adjustments */
+    .skills {
+        margin-top: 20px; /* Add some spacing above the skills section */
+        text-align: center;
+    }
+
+    .skills h2 {
+        font-size: 24px; /* Smaller heading for skills */
+        margin-bottom: 15px; /* Adjust margin below the heading */
+    }
+
+    /* Skills grid adjustments for mobile */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+        gap: 15px; /* Adjust the gap between items */
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    /* Skills icons and item adjustments for mobile */
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skill-icon {
+        width: 80px; /* Smaller icon size */
+        height: 80px;
+        margin-bottom: 8px;
+    }
+}

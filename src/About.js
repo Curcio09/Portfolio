@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import './AboutMobile.css';
 import ReactButton from './ReactButton.png';
 import JavaScriptButton from './JavaScriptButton.png';
 import PythonButton from './PythonButton.png';
