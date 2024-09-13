@@ -1,43 +1,48 @@
-/* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
 
-    /* Main container adjustments */
     .about-container {
-        padding: 10px 20px 30px 20px; /* Adjust padding for mobile */
-        background-color: #4C545C !important; /* Correct background color for mobile */
+        padding: 0px;
+        background-color: #4C545C; /* Mobile-specific background color */
     }
 
-    /* Heading adjustments for mobile */
+    .about-content {
+        display: block;
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center the sections */
+        width: 90%;
+    }
+
     h2 {
-        font-size: 24px; /* Adjust heading size for mobile */
-        text-align: center; /* Keep heading centered */
+        font-size: 24px;
+        text-align: center;
     }
 
     /* About text adjustments */
     .about-text {
-        font-size: 14px; /* Smaller font size for mobile */
-        line-height: 1.6; /* Adjust line height for readability */
-        width: 100%; /* Full width on mobile */
-        text-align: center; /* Center text for mobile readability */
-        padding: 10px 5px; /* Add some horizontal padding */
+        font-size: 15px;
+        line-height: 1.6;
+        width: 100%;
+        text-align: left;
+        padding: 10px 5px;
     }
 
     /* Skills section adjustments */
     .skills {
-        margin-top: 20px; /* Add some spacing above the skills section */
+        margin: 0;
+        width: 100%;
         text-align: center;
     }
 
     .skills h2 {
         font-size: 24px; /* Smaller heading for skills */
-        margin-bottom: 15px; /* Adjust margin below the heading */
+        margin-bottom: 15px;
     }
 
     /* Skills grid adjustments for mobile */
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-        gap: 15px; /* Adjust the gap between items */
-        padding: 0 10px; /* Adjust padding */
+        grid-template-columns: repeat(3, 1fr); /* 2 columns for mobile */
+        gap: 30px;
+        padding: 0 10px;
     }
 
     /* Skills icons and item adjustments for mobile */
@@ -49,8 +54,8 @@
     }
 
     .skill-icon {
-        width: 80px; /* Smaller icon size */
-        height: 80px;
+        width: 100px; /* Smaller icon size */
+        height: 100px;
         margin-bottom: 8px;
     }
 }

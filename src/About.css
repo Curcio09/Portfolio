@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 20px 40px 20px; /* No padding on top, but 20px on left/right and 60px on bottom */
+  padding: 0 20px 40px 20px;
   background: #13171A;
   color: #FFFFFF;
 }
@@ -15,16 +15,16 @@
   justify-content: space-between;
   width: 80%;
   gap: 40px;
-  padding: 0 20px 20px 20px; /* No padding on top, but 20px on left/right and bottom */
+  padding: 0 20px 20px 20px;
 }
 
 /* Left Section: About */
 .about-text {
   font-family: 'Lalezar', sans-serif;
-  font-size: 15px; /* Font size from Figma */
+  font-size: 18px; /* Font size from Figma */
   line-height: 1.8; /* Line spacing for better readability */
   color: #FFFFFF;
-  width: 331px; /* Exact width from Figma */
+  width: 380px; /* Exact width from Figma */
   margin: 0 auto; /* Center the text */
   padding: 10px 0; /* Vertical padding */
 }
@@ -34,7 +34,7 @@ h2 {
   font-size: 32px; /* Heading font size */
   color: #FFFFFF;
   margin-bottom: 20px;
-  text-align: center; /* Center the heading */
+  text-align: center;
 }
 
 /* Right Section: Skills */
@@ -69,25 +69,4 @@ h2 {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .about-content {
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center the sections */
-  }
-}
-
-@media (max-width: 768px) {
-  .about-title, .skills-title {
-    font-size: 24px; /* Adjust heading size */
-  }
-  .about-description {
-    font-size: 13px;
-  }
-  .skill-icon {
-    width: 80px;
-    height: 80px;
-  }
 }

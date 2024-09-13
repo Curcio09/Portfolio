@@ -15,20 +15,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  background-color: #13171A; /* Background for code snippets */
-  color: #F6D26D; /* Text color for code snippets */
+  background-color: #13171A;
+  color: #F6D26D;
   padding: 4px;
   border-radius: 4px;
 }
 
 /* Global link styles */
 a {
-  color: #FFFFFF; /* Link color */
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 
@@ -48,21 +48,4 @@ a:hover {
   .main-container {
     padding: 10px;
   }
-}
-
-h1 {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  font-size: 36px; /* Set desired font size */
-  line-height: 1.2; /* Set line-height for spacing */
-  color: #F6D26D; /* Set the color if different from default */
-}
-
-/* p Styles */
-p {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  font-size: 18px; /* Set desired font size */
-  line-height: 1.5; /* Set line-height for spacing */
-  color: #FFFFFF; /* Set the color if different from default */
 }
