@@ -13,8 +13,9 @@
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 48px;
         text-align: center;
+        margin-bottom: 0;
     }
 
     /* About text adjustments */
@@ -24,24 +25,35 @@
         width: 100%;
         text-align: left;
         padding: 10px 5px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
+
+    .about-text p {
+        margin-top: 0px; /* Adjust this value as needed */
+        margin-bottom: 15px; /* Adjust if necessary */
+    }
+
 
     /* Skills section adjustments */
     .skills {
         margin: 0;
         width: 100%;
         text-align: center;
+        background-color: #13171A;
+        border-radius: 25px;
+        padding-top: 5px;
     }
 
     .skills h2 {
-        font-size: 24px; /* Smaller heading for skills */
-        margin-bottom: 15px;
+        font-size: 48px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     /* Skills grid adjustments for mobile */
     .skills-grid {
         grid-template-columns: repeat(3, 1fr); /* 2 columns for mobile */
-        gap: 30px;
         padding: 0 10px;
     }
 
