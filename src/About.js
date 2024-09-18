@@ -16,7 +16,6 @@ function About() {
   return (
     <div className="about-container">
       <div className="about-content">
-        {/* Left Section: About */}
         <div className="about-text">
           <h2>About</h2>
           <p>
