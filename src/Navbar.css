@@ -26,6 +26,11 @@
   position: relative; /* Allows for absolute positioning within */
 }
 
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 /* Navbar Links - Desktop View */
 .navbar-links {
   display: flex;

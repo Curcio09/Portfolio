@@ -1,5 +1,3 @@
-/* Home.css - Styles for the Home component */
-
 /* Home grid container */
 .homeGrid {
   display: grid;
@@ -34,8 +32,9 @@
   font-size: 26px;
 }
 
-/* Styling for the button in the top-left grid cell */
-.oneOne button {
+/* Common styling for buttons */
+.oneOne button,
+.twoTwo button {
   margin-top: 10px;
   background-color: #000;
   color: #F6D26D;
@@ -48,6 +47,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and active state styling for buttons */
+.oneOne button:hover,
+.twoTwo button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.oneOne button:active,
+.twoTwo button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Styling for the image and ellipse in the top-right grid cell */
@@ -121,18 +134,16 @@
   padding: 0;
 }
 
-/* Styling for the button in the bottom-right grid cell */
-.twoTwo button {
-  margin-top: 10px;
-  background-color: #000;
-  color: #F6D26D;
-  font-family: 'Lalezar', sans-serif;
-  font-size: 22px;
-  padding: 4px 24px;
-  border: 2px solid #F6D26D;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Link Styling - similar to button hover effects */
+.twoTwo a,
+.oneOne a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
+
+.twoTwo a:hover,
+.oneOne a:hover {
+  text-decoration: none;
+}
+
+

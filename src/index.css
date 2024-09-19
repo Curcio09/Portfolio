@@ -21,17 +21,6 @@ code {
   border-radius: 4px;
 }
 
-/* Global link styles */
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
 /* Container for the main content */
 .main-container {
   padding: 20px;
