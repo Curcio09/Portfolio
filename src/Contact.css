@@ -1,0 +1,82 @@
+/* General container styling */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: #13171A;
+}
+
+.contact-container h2 {
+  font-family: 'Lalezar', sans-serif;
+  font-size: 32px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-input, .contact-message {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #000;
+  text-align: center; /* Center text in the input fields */
+}
+
+.contact-message {
+  height: 150px;
+  resize: none;
+  text-align: left; /* Keep text in the message field left-aligned */
+}
+
+/* Placeholder text centering */
+.contact-input::placeholder {
+  text-align: center; /* Ensure placeholder text is centered */
+}
+
+.contact-submit {
+  width: 430px; /* Matches the width you specified */
+  padding: 15px;
+  background-color: #54585A;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Lalezar', sans-serif;
+  font-size: 32px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.contact-submit:hover {
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+  background-color: #54585A;
+  border-radius: 10px;
+  padding: 10px;
+}
