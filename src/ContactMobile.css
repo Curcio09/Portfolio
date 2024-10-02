@@ -1,0 +1,87 @@
+/* Mobile-specific styles for the Contact component */
+@media screen and (max-width: 768px) {
+
+    /* General container styling for mobile */
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+      background-color: #4C545C; /* Updated background color for mobile */
+    }
+  
+    .contact-container h2 {
+      font-family: 'Lalezar', sans-serif;
+      font-size: 48px; /* Slightly smaller font for mobile */
+      color: white;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+  
+    /* Form styling for mobile */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 300px; /* Narrower width for mobile */
+    }
+  
+    .contact-input, .contact-message {
+      width: 100%;
+      padding: 12px; /* Reduced padding for mobile */
+      margin-bottom: 15px;
+      background-color: #ccc;
+      border: none;
+      border-radius: 20px; /* Slightly smaller border radius for mobile */
+      font-size: 14px; /* Smaller font size for mobile */
+      color: #000;
+      text-align: center; /* Center text in the input fields */
+    }
+  
+    .contact-message {
+      height: 120px; /* Reduced height for the message field on mobile */
+      resize: none;
+      text-align: left; /* Keep text in the message field left-aligned */
+    }
+  
+    /* Placeholder text centering */
+    .contact-input::placeholder {
+      text-align: center;
+    }
+  
+    .contact-submit {
+      width: 100%; /* Full width for the submit button on mobile */
+      padding: 12px;
+      background-color: #13171A;
+      color: white;
+      border: none;
+      border-radius: 20px; /* Slightly smaller border radius for mobile */
+      font-family: 'Lalezar', sans-serif;
+      font-size: 24px; /* Smaller font size for mobile */
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+  
+    .contact-submit:hover {
+      transform: scale(1.05);
+    }
+  
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px; /* Smaller gap for mobile */
+    }
+  
+    .social-icons a img {
+      width: 40px; /* Smaller icons for mobile */
+      height: 40px;
+      background-color: #54585A;
+      border-radius: 8px; /* Slightly smaller border radius for mobile */
+      padding: 8px;
+    }
+  }  

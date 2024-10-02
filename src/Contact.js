@@ -12,14 +12,22 @@ function Contact() {
       <form className="contact-form">
         <input type="text" placeholder="Enter Name" className="contact-input" />
         <input type="email" placeholder="Enter Email" className="contact-input" />
-        <textarea className="contact-message"></textarea> {}
+        <textarea className="contact-message"></textarea>
         <button type="submit" className="contact-submit">Submit</button>
       </form>
       <div className="social-icons">
-        <a href="#email"><img src={EmailIcon} alt="Email Icon" /></a>
-        <a href="#phone"><img src={MobileIcon} alt="Phone Icon" /></a>
-        <a href="#linkedin"><img src={LinkedInIcon} alt="LinkedIn Icon" /></a>
-        <a href="#github"><img src={GithubIcon} alt="GitHub Icon" /></a>
+        <a href="mailto:christopherjamescurcio@gmail.com">
+          <img src={EmailIcon} alt="Email Icon" />
+        </a>
+        <a href="tel:+15853751063">
+          <img src={MobileIcon} alt="Phone Icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/chris-curcio-57a415213/" target="_blank" rel="noopener noreferrer">
+          <img src={LinkedInIcon} alt="LinkedIn Icon" />
+        </a>
+        <a href="https://github.com/Curcio09?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <img src={GithubIcon} alt="GitHub Icon" />
+        </a>
       </div>
     </div>
   );
