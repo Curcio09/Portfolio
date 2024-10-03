@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import './HomeMobile.css';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import placeImage from './place.png';
 import Ellipse from './Ellipse.svg';

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
-import './ProjectsMobile.css';
 import ReactCalculator from './React calculator.png';
 import ReactToDo from './React to-do.png';
 import Python from './Python.png';

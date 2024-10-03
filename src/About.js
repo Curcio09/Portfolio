@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import './About.css';
-import './AboutMobile.css';
 import ReactButton from './ReactButton.png';
 import JavaScriptButton from './JavaScriptButton.png';
 import PythonButton from './PythonButton.png';

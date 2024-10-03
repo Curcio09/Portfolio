@@ -1,4 +1,4 @@
-/* Home grid container */
+/* Layout and Grid Container */
 .homeGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-/* Styling for the text section in the top-left grid cell */
+/* Text Section - Top-left Grid Cell */
 .oneOne {
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
   padding-left: 200px;
 }
 
-/* Styling for the text in the top-left grid cell */
+/* Typography - Text Inside Top-left Grid Cell */
 .oneOne p {
   color: #FFFFFF;
   font-size: 24px;
@@ -26,31 +26,31 @@
   padding: 0;
 }
 
-/* Styling for the highlighted name */
+/* Highlighted Name Styling */
 .highlight-name {
   color: #F6D26D;
   font-size: 26px;
 }
 
-/* Common styling for buttons */
+/* Buttons */
 .oneOne button,
 .twoTwo button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
+  padding: 4px 24px;
   background-color: #000;
   color: #F6D26D;
   font-family: 'Lalezar', sans-serif;
   font-size: 22px;
-  padding: 4px 24px;
   border: 2px solid #F6D26D;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover and active state styling for buttons */
+/* Buttons - Hover & Active States */
 .oneOne button:hover,
 .twoTwo button:hover {
   transform: scale(1.1);
@@ -63,7 +63,7 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Styling for the image and ellipse in the top-right grid cell */
+/* Image & Ellipse - Top-right Grid Cell */
 .oneTwo {
   display: flex;
   justify-content: center;
@@ -71,17 +71,17 @@
   padding-right: 180px;
 }
 
-/* Image container styling */
+/* Image Container */
 .image-container {
   position: relative;
-  width: 414px; /* Width matching the Ellipse */
-  height: 392.62px; /* Height matching the Ellipse */
+  width: 414px;
+  height: 392.62px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Ellipse styling */
+/* Ellipse Styling */
 .ellipse {
   position: absolute;
   width: 100%;
@@ -91,17 +91,17 @@
   z-index: 1;
 }
 
-/* Profile image styling */
+/* Profile Image */
 .profile-image {
   position: relative;
-  z-index: 1;
+  margin-top: 42px;
   height: auto;
   object-fit: cover;
-  margin-top: 42px;
   filter: grayscale(100%);
+  z-index: 1;
 }
 
-/* Styling for the image in the bottom-left grid cell */
+/* Image - Bottom-left Grid Cell */
 .twoOne {
   display: flex;
   justify-content: center;
@@ -110,14 +110,14 @@
 }
 
 .twoOne img {
-  max-width: 500px; /* Set a fixed max-width for desktop */
   width: 100%;
+  max-width: 500px;
   height: auto;
   object-fit: cover;
   padding-bottom: 60px;
 }
 
-/* Styling for the text section in the bottom-right grid cell */
+/* Text Section - Bottom-right Grid Cell */
 .twoTwo {
   display: flex;
   flex-direction: column;
@@ -126,6 +126,7 @@
   padding-left: 100px;
 }
 
+/* Typography - Text Inside Bottom-right Grid Cell */
 .twoTwo p {
   color: #FFFFFF;
   font-size: 24px;
@@ -134,7 +135,7 @@
   padding: 0;
 }
 
-/* Link Styling - similar to button hover effects */
+/* Link Styling */
 .twoTwo a,
 .oneOne a {
   color: #FFFFFF;
@@ -146,4 +147,89 @@
   text-decoration: none;
 }
 
+/* Mobile Adjustments for Home Component */
+@media screen and (max-width: 768px) {
 
+  /* Grid Adjustments for Mobile */
+  .homeGrid {
+    grid-template-columns: repeat(2, 1fr); /* Maintain two-column layout */
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  /* Typography - Highlighted Name */
+  .highlight-name {
+    font-size: 18px;
+  }
+
+  /* Layout Adjustments for Mobile */
+  .oneOne, .oneTwo, .twoOne, .twoTwo {
+    padding: 5px;
+  }
+
+  /* Typography - Paragraph Text Adjustments */
+  .oneOne p, .twoTwo p {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 5px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* Button Styling for Mobile */
+  .oneOne button, .twoTwo button {
+    font-size: 18px;
+    background-color: #4C545C;
+    color: #F6D26D;
+    border: 2px solid #F6D26D;
+    padding: 3px 20px;
+    min-width: 80px;
+    border-radius: 8px;
+  }
+
+  /* Image Container Adjustments for Mobile */
+  .oneTwo .image-container, .twoOne img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hide Ellipse on Mobile */
+  .ellipse {
+    display: none;
+  }
+
+  /* Profile Image Size Adjustments */
+  .profile-image {
+    max-width: 230px;
+    height: auto;
+    padding-right: 10px;
+  }
+
+  /* TwoOne Container Layout Adjustments */
+  .twoOne {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /* TwoTwo Container Layout Adjustments */
+  .twoTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    max-width: 100%;
+  }
+
+  /* Image Sizing in TwoOne */
+  .homeGrid .twoOne img {
+    max-width: 400px;
+    width: 125%;
+    height: auto;
+    padding-bottom: 45px;
+  }
+}
