@@ -1,9 +1,9 @@
 import React from 'react';
 import './Contact.css';
-import EmailIcon from './Email.png';
-import GithubIcon from './GitHub.png';
-import MobileIcon from './Mobile.png';
-import LinkedInIcon from './LinkedIn.png';
+import EmailIcon from './img/Email.png';
+import GithubIcon from './img/GitHub.png';
+import MobileIcon from './img/Mobile.png';
+import LinkedInIcon from './img/LinkedIn.png';
 
 function Contact() {
   return (

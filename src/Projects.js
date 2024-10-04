@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
-import ReactCalculator from './React calculator.png';
-import ReactToDo from './React to-do.png';
-import Python from './Python.png';
-import Bank from './Bank.png';
-import Form from './Form.png';
-import Figma from './Figma.png';
+import ReactCalculator from './img/React calculator.png';
+import ReactToDo from './img/React to-do.png';
+import Python from './img/Python.png';
+import Bank from './img/Bank.png';
+import Form from './img/Form.png';
+import Figma from './img/Figma.png';
 
 function Projects() {
   return (

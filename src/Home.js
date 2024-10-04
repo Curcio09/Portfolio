@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import placeImage from './place.png';
-import Ellipse from './Ellipse.svg';
-import project from './project.png';
+import placeImage from './img/place.png';
+import Ellipse from './img/Ellipse.svg';
+import project from './img/project.png';
 
 function Home() {
   return (

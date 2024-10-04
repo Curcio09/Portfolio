@@ -1,0 +1,293 @@
+/* General Layout */
+.react-skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px 20px;
+    background: #13171A;
+    color: #FFF;
+  }
+  
+  /* Typography - React Skills Page Header */
+  .react-skill-header {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Typography - Intro Section */
+  .react-skill-intro {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Key Concepts Section */
+  .react-key-concepts {
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  .react-key-concepts h2 {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .react-key-concepts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .react-key-concepts li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Code Samples Section */
+  .react-code-samples {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #1E2328;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .react-code-samples h2 {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .code-sample {
+    background-color: #13171A;
+    color: #F6D26D;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+  
+  /* Projects Section */
+  .react-projects {
+    padding-bottom: 20px;
+  }
+  
+  .react-projects h2 {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .react-projects p {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Project Grid */
+  .react-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    background-color: #1E2328;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .react-project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .react-project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .react-project-item:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Project Image Styling */
+  .react-project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .react-project-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .react-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  
+  .react-project-content:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+  }
+  
+  .react-project-info {
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .react-project-info h3 {
+    font-size: 16px;
+    font-family: 'Lalezar', sans-serif;
+    margin-bottom: 0;
+  }
+  
+  .react-project-info p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    background-color: #000;
+    color: #F6D26D;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 22px;
+    padding: 4px 24px;
+    border: 2px solid #F6D26D;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Mobile Adjustments for React Skill Page */
+  @media screen and (max-width: 768px) {
+    
+    .react-skill-container {
+      padding: 0;
+      background-color: #4C545C; /* Mobile-specific background color */
+    }
+  
+    .react-skill-header {
+      font-size: 40px;
+    }
+  
+    .react-skill-intro {
+      font-size: 16px;
+      line-height: 1.6;
+      width: 100%;
+      padding: 10px 5px;
+    }
+  
+    .react-key-concepts {
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    .react-key-concepts h2 {
+      font-size: 28px;
+    }
+  
+    .react-key-concepts ul {
+      padding-left: 15px;
+    }
+  
+    .react-key-concepts li {
+      font-size: 16px;
+    }
+  
+    .react-code-samples {
+      width: 100%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .react-code-samples h2 {
+      font-size: 28px;
+    }
+  
+    .code-sample {
+      font-size: 14px;
+    }
+  
+    .react-projects {
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    .react-projects h2 {
+      font-size: 28px;
+    }
+  
+    .react-projects p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  
+    .projects-grid {
+      grid-template-columns: repeat(1, 1fr); /* Adjusted to 1 column on mobile */
+      gap: 20px;
+    }
+  
+    .project-item {
+      max-width: 100%;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .back-button {
+      font-size: 20px;
+    }
+  }  

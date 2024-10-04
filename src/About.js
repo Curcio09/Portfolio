@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for routing
 import './About.css';
-import ReactButton from './ReactButton.png';
-import JavaScriptButton from './JavaScriptButton.png';
-import PythonButton from './PythonButton.png';
-import JavaButton from './JavaButton.png';
-import FigmaButton from './FigmaButton.png';
-import GitHubButton from './GitHubButton.png';
-import PHPButton from './PHPButton.png';
-import BootstrapButton from './BootstrapButton.png';
-import HTMLCSSButton from './HTMLCSSButton.png';
+import ReactButton from './img/ReactButton.png';
+import JavaScriptButton from './img/JavaScriptButton.png';
+import PythonButton from './img/PythonButton.png';
+import JavaButton from './img/JavaButton.png';
+import FigmaButton from './img/FigmaButton.png';
+import GitHubButton from './img/GitHubButton.png';
+import PHPButton from './img/PHPButton.png';
+import BootstrapButton from './img/BootstrapButton.png';
+import HTMLCSSButton from './img/HTMLCSSButton.png';
 
 function About() {
   return (
@@ -34,47 +34,47 @@ function About() {
           <div className="skills-grid">
             <div className="skill-item">
               <Link to="/skills/react">
-                <img src={ReactButton} alt="React" className="skill-icon" />
+                <img src={ReactButton} alt="React Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/javascript">
-                <img src={JavaScriptButton} alt="JavaScript" className="skill-icon" />
+                <img src={JavaScriptButton} alt="JavaScript Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/python">
-                <img src={PythonButton} alt="Python" className="skill-icon" />
+                <img src={PythonButton} alt="Python Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/java">
-                <img src={JavaButton} alt="Java" className="skill-icon" />
+                <img src={JavaButton} alt="Java Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/figma">
-                <img src={FigmaButton} alt="Figma" className="skill-icon" />
+                <img src={FigmaButton} alt="Figma Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/github">
-                <img src={GitHubButton} alt="GitHub" className="skill-icon" />
+                <img src={GitHubButton} alt="GitHub Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/php">
-                <img src={PHPButton} alt="PHP" className="skill-icon" />
+                <img src={PHPButton} alt="PHP Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/bootstrap">
-                <img src={BootstrapButton} alt="Bootstrap" className="skill-icon" />
+                <img src={BootstrapButton} alt="Bootstrap Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
               <Link to="/skills/html-css">
-                <img src={HTMLCSSButton} alt="HTML & CSS" className="skill-icon" />
+                <img src={HTMLCSSButton} alt="HTML and CSS Skill Button" className="skill-icon" />
               </Link>
             </div>
           </div>

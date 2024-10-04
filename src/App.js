@@ -5,15 +5,15 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
-import ReactSkillPage from './ReactSkillPage'; // Import skill components
-import JavaScriptSkillPage from './JavaScriptSkillPage';
-import PythonSkillPage from './PythonSkillPage';
-import JavaSkillPage from './JavaSkillPage';
-import FigmaSkillPage from './FigmaSkillPage';
-import GitHubSkillPage from './GitHubSkillPage';
-import PHPSkillPage from './PHPSkillPage';
-import BootstrapSkillPage from './BootstrapSkillPage';
-import HTMLCSSSkillPage from './HTMLCSSSkillPage';
+import ReactSkillPage from './SkillReact';
+import JavaScriptSkillPage from './SkillJavaScript';
+import PythonSkillPage from './SkillPython';
+import JavaSkillPage from './SkillJava';
+import FigmaSkillPage from './SkillFigma';
+import GitHubSkillPage from './SkillGitHub';
+import PHPSkillPage from './SkillPHP';
+import BootstrapSkillPage from './SkillBootstrap';
+import HTMLCSSSkillPage from './SkillHTML';
 import './App.css';
 
 function App() {
@@ -27,8 +27,6 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            
-            {/* Add skill routes */}
             <Route path="/skills/react" element={<ReactSkillPage />} />
             <Route path="/skills/javascript" element={<JavaScriptSkillPage />} />
             <Route path="/skills/python" element={<PythonSkillPage />} />
