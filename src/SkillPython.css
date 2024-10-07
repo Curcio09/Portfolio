@@ -1,0 +1,199 @@
+/* General Layout */
+.python-skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px 20px;
+    background: #13171A;
+    color: #FFF;
+  }
+  
+  /* Typography - Python Skills Page Header */
+  .python-skill-header {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Typography - Intro Section */
+  .python-skill-intro {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Projects Section */
+  .python-projects {
+    padding-bottom: 20px;
+  }
+  
+  .python-projects h2 {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .python-projects p {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Project Grid */
+  .python-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    background-color: #1E2328;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .python-project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .python-project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .python-project-item:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Project Image Styling */
+  .python-project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .python-project-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .python-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  
+  .python-project-content:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+  }
+  
+  .python-project-info {
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .python-project-info h3 {
+    font-size: 16px;
+    font-family: 'Lalezar', sans-serif;
+    margin-bottom: 0;
+  }
+  
+  .python-project-info p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    background-color: #000;
+    color: #F6D26D;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 22px;
+    padding: 4px 24px;
+    border: 2px solid #F6D26D;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Mobile Adjustments for Python Skill Page */
+  @media screen and (max-width: 768px) {
+    
+    .python-skill-container {
+      padding: 0;
+      background-color: #4C545C; /* Mobile-specific background color */
+    }
+  
+    .python-skill-header {
+      font-size: 40px;
+    }
+  
+    .python-skill-intro {
+      font-size: 16px;
+      line-height: 1.6;
+      width: 100%;
+      padding: 10px 5px;
+    }
+  
+    .python-projects-grid {
+      grid-template-columns: repeat(1, 1fr); /* Adjusted to 1 column on mobile */
+      gap: 20px;
+    }
+  
+    .python-project-item {
+      max-width: 100%;
+    }
+  
+    .python-project-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .back-button {
+      font-size: 20px;
+    }
+  }
