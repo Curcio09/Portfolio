@@ -58,9 +58,9 @@ function About() {
               </Link>
             </div>
             <div className="skill-item">
-              <Link to="/skills/github">
+              <a href="https://github.com/Curcio09?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <img src={GitHubButton} alt="GitHub Skill Button" className="skill-icon" />
-              </Link>
+              </a>
             </div>
             <div className="skill-item">
               <Link to="/skills/php">
