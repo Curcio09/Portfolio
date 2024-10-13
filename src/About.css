@@ -25,7 +25,6 @@
   line-height: 1.8;
   width: 380px;
   margin: 0 auto;
-  padding: 10px 0;
 }
 
 /* Typography - About Page Header */
@@ -53,6 +52,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  padding-top: 15px;
   justify-items: center;
 }
 

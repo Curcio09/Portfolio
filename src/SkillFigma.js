@@ -1,7 +1,7 @@
 import React from 'react';
 import './SkillFigma.css';  // Import the CSS file for Figma skill
-import FigmaDesign from './img/FigmaDesktop.png';
-import FigmaMobile from './img/FigmaMobile.png';
+import FigmaDesign from './img/Home.png';
+import FigmaMobile from './img/Contact.png';
 
 function FigmaSkillPage() {
   return (
@@ -24,7 +24,7 @@ function FigmaSkillPage() {
               <div className="overlay">
                 <div className="figma-project-info">
                   <h3>Portfolio Desktop Design</h3>
-                  <p>Download the desktop design of this portfolio website.</p>
+                  <p>Download the Figma desktop design for this portfolio website.</p>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@ function FigmaSkillPage() {
               <div className="overlay">
                 <div className="figma-project-info">
                   <h3>Portfolio Mobile Design</h3>
-                  <p>Download the mobile design of this portfolio website.</p>
+                  <p>Download the Figma mobile design for this portfolio website.</p>
                 </div>
               </div>
             </div>

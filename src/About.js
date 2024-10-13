@@ -7,7 +7,7 @@ import PythonButton from './img/PythonButton.png';
 import JavaButton from './img/JavaButton.png';
 import FigmaButton from './img/FigmaButton.png';
 import GitHubButton from './img/GitHubButton.png';
-import PHPButton from './img/PHPButton.png';
+import SQLButton from './img/SQLbutton.png';
 import BootstrapButton from './img/BootstrapButton.png';
 import HTMLCSSButton from './img/HTMLCSSButton.png';
 
@@ -64,7 +64,7 @@ function About() {
             </div>
             <div className="skill-item">
               <Link to="/skills/php">
-                <img src={PHPButton} alt="PHP Skill Button" className="skill-icon" />
+                <img src={SQLButton} alt="PHP Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">
