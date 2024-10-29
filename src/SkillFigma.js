@@ -1,5 +1,6 @@
 import React from 'react';
-import './SkillFigma.css';  // Import the CSS file for Figma skill
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './SkillFigma.css';
 import FigmaDesign from './img/Home.png';
 import FigmaMobile from './img/Contact.png';
 
@@ -45,9 +46,9 @@ function FigmaSkillPage() {
 
       {/* Back Button */}
       <div className="back-button-container">
-        <a href="/about">
+        <Link to="/about">
           <button className="back-button">Back</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

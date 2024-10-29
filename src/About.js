@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for routing
+import { Link } from 'react-router-dom';
 import './About.css';
 import ReactButton from './img/ReactButton.png';
 import JavaScriptButton from './img/JavaScriptButton.png';
@@ -63,8 +63,8 @@ function About() {
               </a>
             </div>
             <div className="skill-item">
-              <Link to="/skills/php">
-                <img src={SQLButton} alt="PHP Skill Button" className="skill-icon" />
+              <Link to="/skills/sql">
+                <img src={SQLButton} alt="SQL Skill Button" className="skill-icon" />
               </Link>
             </div>
             <div className="skill-item">

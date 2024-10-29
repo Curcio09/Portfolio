@@ -11,7 +11,7 @@ import PythonSkillPage from './SkillPython';
 import JavaSkillPage from './SkillJava';
 import FigmaSkillPage from './SkillFigma';
 import GitHubSkillPage from './SkillGitHub';
-import PHPSkillPage from './SkillPHP';
+import SQLSkillPage from './SkillSQL';
 import BootstrapSkillPage from './SkillBootstrap';
 import HTMLCSSSkillPage from './SkillHTML';
 import './App.css';
@@ -33,7 +33,7 @@ function App() {
             <Route path="/skills/java" element={<JavaSkillPage />} />
             <Route path="/skills/figma" element={<FigmaSkillPage />} />
             <Route path="/skills/github" element={<GitHubSkillPage />} />
-            <Route path="/skills/php" element={<PHPSkillPage />} />
+            <Route path="/skills/sql" element={<SQLSkillPage />} />
             <Route path="/skills/bootstrap" element={<BootstrapSkillPage />} />
             <Route path="/skills/html-css" element={<HTMLCSSSkillPage />} />
           </Routes>

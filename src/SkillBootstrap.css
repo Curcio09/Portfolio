@@ -1,0 +1,94 @@
+/* General Layout */
+.bootstrap-skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px 20px;
+    background: #13171A;
+    color: #FFF;
+}
+
+/* Typography - Bootstrap Skills Page Header */
+.bootstrap-skill-header {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Typography - Intro Section */
+.bootstrap-skill-intro {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Projects Section */
+.bootstrap-projects {
+    padding-bottom: 20px;
+}
+
+.bootstrap-projects h2 {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Project Grid */
+.bootstrap-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    background-color: #1E2328;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bootstrap-project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bootstrap-project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bootstrap-project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Back Button */
+.back-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    background-color: #000;
+    color: #F6D26D;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 22px;
+    padding: 4px 24px;
+    border: 2px solid #F6D26D;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
